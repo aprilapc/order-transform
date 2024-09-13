@@ -74,6 +74,22 @@
     }
     ```
 
+#### 錯誤訊息清單
+
+- `Order ID is required`：order.id 必填
+- `Name is required`：order.name 必填
+- `Address is required`：order.address 必填
+- `City is required`：order.address.city 必填
+- `District is required`：order.address.district 必填
+- `Street is required`：order.address.street 必填
+- `Price is required`：order.price 必填
+- `Currency is required`：order.currency 必填
+- `Price must be a number`：order.price 必須為數字
+- `Currency format is wrong`：order.currency 需為 TWD 或 USD
+- `Price is over 2000`： order.price 轉換後不可超過 2000
+- `Name contains non-English characters`：order.name 不可包含非英文字符
+- `Name is not capitalized`：order.name 每個單字首字母需大寫
+
 ## 單元測試
 1. 運行單元測試：
     ```sh
